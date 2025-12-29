@@ -1,3 +1,7 @@
+import sys
+import os
+
+sys.path.append(os.path.abspath(os.path.dirname(__file__)))
 import streamlit as st
 import pandas as pd
 
@@ -76,3 +80,4 @@ if st.button("Predict Congestion"):
         st.warning("⏳ Advisory: Expect delays")
     else:
         st.success("✅ Advisory: Safe to travel")
+
