@@ -1,17 +1,15 @@
-import sys
-import os
 
-sys.path.append(os.path.abspath(os.path.dirname(__file__)))
 import streamlit as st
 import pandas as pd
 
-from src.data_preprocessing import load_and_clean_data
-from src.feature_engineering import add_time_features, add_rain_feature
-from src.label_creation import create_congestion_labels
-from src.train_model import train_model
-from src.predict_congestion import predict_and_explain
-from src.traffic_volume_predictor import train_volume_model, predict_traffic_volume
+from data_preprocessing import load_and_clean_data
+from feature_engineering import add_time_features, add_rain_feature
+from label_creation import create_congestion_labels
+from train_model import train_model
+from predict_congestion import predict_and_explain
+from traffic_volume_predictor import train_volume_model, predict_traffic_volume
 from sklearn.preprocessing import LabelEncoder
+
 
 st.title("🚦 Smart Traffic Congestion Prediction System")
 
@@ -80,4 +78,5 @@ if st.button("Predict Congestion"):
         st.warning("⏳ Advisory: Expect delays")
     else:
         st.success("✅ Advisory: Safe to travel")
+
 
