@@ -1,5 +1,5 @@
 🚦 Traffic Congestion Prediction System
-📌 Overview
+
 
 The Traffic Congestion Prediction System is a data science and machine learning project that predicts traffic congestion levels and traffic volume based on time-related and weather-based factors.
 The system helps in traffic planning, congestion management, and decision-making by providing real-time predictions through a web interface.
